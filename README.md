@@ -1,4 +1,4 @@
-# How to Install FilaMan via Docker Command
+# How to Install FilaMan-System via Docker Command
 
 This guide explains how to run the FilaMan application using a single Docker command. This is the recommended method for simple deployments.
 
