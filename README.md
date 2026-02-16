@@ -16,8 +16,9 @@ Open a terminal or command prompt, navigate into the folder you just created, an
 docker run -d \
   --name filaman-system-app \
   --restart unless-stopped \
+  --pull always \
   -p 8000:8000 \
-  -v "$(pwd)/filaman.db":/app/filaman.db \
+  -v filaman_data:/app/data \
   ghcr.io/fire-devils/filaman-system:latest
 ```
 
@@ -49,8 +50,9 @@ Docker will now download the image and start the FilaMan container in the backgr
 docker run -d \
   --name filaman-system-app \
   --restart unless-stopped \
+  --pull always \
   -p 8000:8000 \
-  -v "$(pwd)/filaman.db":/app/filaman.db \
+  -v filaman_data:/app/data \
   ghcr.io/fire-devils/filaman-system:latest
 ```
 
